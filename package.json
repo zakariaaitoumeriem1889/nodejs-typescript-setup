@@ -1,0 +1,49 @@
+{
+	"name": "nodejs-typescript-setup",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"private": false,
+	"scripts": {
+		"build": "tsc",
+		"clean": "rimraf dist",
+		"dev": "nodemon",
+		"dev:serve": "npm run serve",
+		"postbuild": "tsc-alias",
+		"prebuild": "npm run clean",
+		"predev:serve": "clear",
+		"prestart": "npm run build",
+		"serve": "tsx -r dotenv/config src/index.ts",
+		"start": "node -r dotenv/config dist/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"dependencies": {
+		"dotenv": "^17.2.1",
+		"express": "^5.1.0",
+		"find-package-json": "^1.2.0",
+		"local-ip-url": "^1.0.10"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.33.0",
+		"@types/express": "^5.0.3",
+		"@types/find-package-json": "^1.2.6",
+		"@types/node": "^24.3.0",
+		"clear-cli": "^2.0.0",
+		"eslint": "^9.33.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.4",
+		"globals": "^16.3.0",
+		"nodemon": "^3.1.10",
+		"prettier": "^3.6.2",
+		"rimraf": "^6.0.1",
+		"ts-node": "^10.9.2",
+		"tsc-alias": "^1.8.16",
+		"tsx": "^4.20.4",
+		"typescript": "^5.9.2",
+		"typescript-eslint": "^8.39.1"
+	}
+}

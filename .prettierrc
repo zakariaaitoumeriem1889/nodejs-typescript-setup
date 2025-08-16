@@ -1,0 +1,15 @@
+{
+	"$schema": "https://www.schemastore.org/prettierrc.json",
+	"arrowParens": "always",
+	"endOfLine": "auto",
+	"experimentalOperatorPosition": "start",
+	"experimentalTernaries": false,
+	"objectWrap": "preserve",
+	"printWidth": 90,
+	"proseWrap": "preserve",
+	"semi": true,
+	"singleQuote": true,
+	"tabWidth": 4,
+	"trailingComma": "none",
+	"useTabs": true
+}

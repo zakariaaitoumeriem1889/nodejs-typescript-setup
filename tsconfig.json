@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"exactOptionalPropertyTypes": true,
+		"isolatedModules": true,
+		"lib": ["esnext"],
+		"module": "nodenext",
+		"moduleDetection": "force",
+		"moduleResolution": "nodenext",
+		"noUncheckedIndexedAccess": true,
+		"noUncheckedSideEffectImports": true,
+		"outDir": "./dist",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"rootDir": "./src",
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "esnext",
+		"types": ["node"]
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
+}
